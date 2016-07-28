@@ -1,0 +1,111 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:orientation="vertical"
+        android:weightSum="3">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.90"
+            android:padding="5dp"
+            android:orientation="vertical">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal">
+                <ImageView
+                    android:id="@+id/imageBelakang"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@mipmap/ic_launcher"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|bottom"
+                    android:background="@android:drawable/screen_background_dark_transparent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/cafeNama"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="16dp"
+                        android:text="Name"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:id="@+id/cafeAlamat"
+                        android:textSize="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="1dp"
+                        android:text="Address"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:textColor="@color/textColorPrimary"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvDeskripsi"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:text="Deskripsi"
+        android:textSize="17dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FASILITAS"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearFasilitas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOKASI"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="@android:color/black"
+        android:textStyle="bold"
+        android:textSize="15dp"/>
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">CafeApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_detail">Detail Cafe</string>
+</resources>
